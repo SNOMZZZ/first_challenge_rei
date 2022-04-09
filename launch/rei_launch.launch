@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+    <node name="first_rei" pkg="first_challenge_rei" type="first_challenge_rei" output="screen" />
+    <node name="roomba_driver" pkg="roomba_500driver_meiji" type="main500" />
+    <node name="lidar" pkg="urg_node" type="urg_node" >
+        <param name="ip_address" value="192.168.1.112" />
+    </node>
+</launch>
